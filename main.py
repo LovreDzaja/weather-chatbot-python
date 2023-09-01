@@ -20,7 +20,7 @@ def get_response(user_input):
     user_input = user_input.lower()
     words = user_input.split()
 
-    if 'weather' in words and words and 'in' in words:
+    if 'weather' in words and 'in' in words:
         city_index = words.index('in') + 1
         if city_index < len(words):
             location = words[city_index]
@@ -28,10 +28,15 @@ def get_response(user_input):
 
     return 'I\'m not sure how to respond to that.'
 
+print("Bot: Hello! How can I assist you today?")
+
 # Testing the weather forecast chatbot
 while True:
     user_input = input("You: ")
     if user_input.lower() == 'exit':
+        print("Bot: It was nice talking to you, come again!!")
         break
     response = get_response(user_input)
     print("Bot: " + response)
+
+
