@@ -1,4 +1,4 @@
-# Weather Forecast Chatbot
+# ☀️ Weather Forecast Chatbot 🌧️
 
 This is a simple weather forecast chatbot that provides current weather information for a given city using the OpenWeatherMap API.
 
