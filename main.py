@@ -1,7 +1,7 @@
 import requests
 
 # Replace with your OpenWeatherMap API key
-API_KEY = 'YOUR_API_KEY'
+API_KEY = '8233e90310c587f83e5d3e7bf29e2e6e'
 
 def get_weather(city):
     weather_url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}'
@@ -20,7 +20,7 @@ def get_response(user_input):
     user_input = user_input.lower()
     words = user_input.split()
 
-    if 'weather' in words and 'like' in words and 'in' in words:
+    if 'weather' in words and words and 'in' in words:
         city_index = words.index('in') + 1
         if city_index < len(words):
             location = words[city_index]
