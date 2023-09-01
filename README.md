@@ -20,3 +20,14 @@ This is a simple weather forecast chatbot that provides current weather informat
   pip install requests
   ```
   
+## Response Formatting
+
+- The chatbot's responses are formatted using the following conventions:
+  - **City Names** are displayed as regular text.
+  - **Temperature** is displayed in **bold**.
+  - **Weather Conditions** are displayed in *italics*.
+  - Error messages are displayed in a different format for clarity.
+
+## Exitting the chatbot
+
+Simply type exit and click enter. Have fun coding. 😄
