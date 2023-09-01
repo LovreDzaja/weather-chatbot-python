@@ -20,7 +20,7 @@ def get_response(user_input):
     user_input = user_input.lower()
     words = user_input.split()
 
-    if 'weather' in words and words and 'in' in words:
+    if 'weather' in words and 'in' in words:
         city_index = words.index('in') + 1
         if city_index < len(words):
             location = words[city_index]
